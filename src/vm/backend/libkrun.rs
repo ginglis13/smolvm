@@ -519,6 +519,7 @@ fn inject_init_krun(rootfs: &Path) -> Result<()> {
 
     Err(Error::vm_creation(
         "init.krun not found. Please install smolvm-init or build from source. \
+        // This link is wrong
          See https://github.com/smolvm/smolvm#init-krun for details.",
     ))
 }

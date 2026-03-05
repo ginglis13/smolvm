@@ -94,6 +94,7 @@ impl VmExecutor for MacOsExecutor {
 pub struct MacOsRosetta;
 
 /// Path to the Rosetta runtime on macOS.
+#[cfg(target_arch = "aarch64")]
 const ROSETTA_RUNTIME_PATH: &str = "/Library/Apple/usr/libexec/oah";
 
 impl RosettaSupport for MacOsRosetta {
